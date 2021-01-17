@@ -1,0 +1,106 @@
+﻿@model IEnumerable<Project_Work.Models.EquipmentType>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th></th>
+            <th>
+                Type Id
+            </th>
+            <th>
+                Type Name
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var t in Model)
+        {
+            <tr>
+                <td><button type="button" class="btn select" data-typeid="@t.EquipmentTypeId"><i class="fa fa-plus"></i></button></td>
+                <td>@t.EquipmentTypeId</td>
+                <td>@t.TypeName</td>
+            </tr>
+            <tr style="display:none" id="@("equipments" + t.EquipmentTypeId)">
+                <td colspan="3">
+                    <table class="table table-bordered table-sm">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Model</th>
+                                <th>Purchase Date</th>
+                                <th>Parts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var eq in t.Equipments)
+                            {
+                                <tr>
+                                    <td>
+                                        @eq.Model
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(x=> eq.PurchaseDate)
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn parts" data-equipmentid="@eq.EquipmentId"><i class="fa fa-window-maximize"></i></button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="modal" tabindex="-1" role="dialog" id="partsModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Parts</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="partlocation">
+                
+            </div>
+            <div class="modal-footer">
+               
+                <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section styles{
+
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+}
+@section scripts{
+
+    <script>
+        $(document).ready(function () {
+            $("button.select").click(function () {
+                
+                var tid = $(this).data("typeid");
+                $("#equipments" + tid).toggle();
+                $(this).find("i").toggleClass("fa-plus fa-minus");
+            });
+            $("button.parts").click(function () {
+                var pid = $(this).data("equipmentid");
+                $.ajax({
+                    type: "GET",
+                    url: "/Equipments/GetParts/" + pid
+                })
+                    .done(function (result) {
+                        //console.log(result);
+                        $("#partlocation").html(result);
+                        $("#partsModal").modal();
+                    });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,53 @@
+﻿@model M7_Project_Works.Models.team
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h3>Are you sure to delete this Team?</h3>
+<div class="row">
+    <div class="col-2 text-right">
+        Team Name
+    </div>
+    <div class="col-4">
+        @Model.teamName
+    </div>
+</div>
+<div class="row">
+    <div class="col-2 text-right">
+        Location
+    </div>
+    <div class="col-4">
+        @Model.Location
+    </div>
+</div>
+<div class="row">
+    <div class="col-2 text-right">
+        Contact
+    </div>
+    <div class="col-4">
+        @Model.Contact
+    </div>
+</div>
+<div class="row">
+    <div class="col-2 text-right">
+        Established
+    </div>
+    <div class="col-4">
+        @Model.Established
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-4 offset-2">
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(x => x.teamId)
+            <input type="submit" class="btn btn-danger" value="Confirm Delete?" />
+        }
+    </div>
+</div>
+<a href="@Url.Action("Index", "Teams")"><i class="fa fa-long-arrow-left"></i> Back to list</a>
+
+@section styles{
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+}

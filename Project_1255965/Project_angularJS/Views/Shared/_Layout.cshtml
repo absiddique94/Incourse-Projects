@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="courseApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Project_1255965 : @ViewBag.Title</title>
+    <environment include="Development">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+        <link href="~/libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <script src="~/libs/popper/umd/popper.js"></script>
+        <script src="~/libs/jquery/jquery.js"></script>
+        <style>
+            body {
+                padding-top: 70px;
+                font-family: Roboto, "Helvetica Neue", sans-serif;
+            }
+        </style>
+        <link href="~/libs/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    </environment>
+</head>
+<body ng-controller="courseCtrl">
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top shadow-sm border-bottom">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">SCMS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav">
+                <li class="nav-item"> <a class="nav-link" ng-href="#!/home">Home</a></li>
+                <li class="nav-item"> <a class="nav-link" ng-href="#!/students">Students & Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+    <footer class="container-fluid bg-light">
+        @DateTime.Now.Year - &copy;AngularJS Application
+    </footer>
+    <environment include="Development">
+        <script src="~/libs/bootstrap/js/bootstrap.js"></script>
+
+        <script src="~/libs/angularjs/angular.js"></script>
+        <script src="~/libs/angularjs/angular-animate.js"></script>
+        <script src="~/libs/angularjs/angular-aria.js"></script>
+        <script src="~/libs/angularjs/angular-messages.js"></script>
+        <script src="~/libs/angularjs/angular-route.js"></script>
+        <script>
+            angular.module("courseApp", ['ngRoute'])
+                .config(($routeProvider) => {
+                    $routeProvider.when('/home', {
+                        templateUrl: '/App/Views/home.html'
+                    })
+                        .when('/students', { templateUrl: '/App/Views/students.html' })
+                        .otherwise({ redirectTo: '/home' })
+                })
+                .controller("courseCtrl", ($scope, studentSvc) => {
+                    $scope.model = {};
+                    studentSvc.getStudentWithCourse()
+                        .then(r => {
+                            $scope.model.students = [];
+                            angular.forEach(r.data, (v, k) => {
+                                $scope.model.students.push({ isExpanded:false, student: v });
+                            })
+                        }, err => {
+                            console.log(err);
+                        })
+                });
+        </script>
+        <script src="~/App/Services/studentService.js"></script>
+    </environment>
+</body>
+</html>

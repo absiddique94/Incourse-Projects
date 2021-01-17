@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="HRModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="HRDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Departments" EntityType="HRModel.Department" />
+    <EntitySet Name="Employees" EntityType="HRModel.Employee" />
+    <AssociationSet Name="DepartmentEmployee" Association="HRModel.DepartmentEmployee">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentId" />
+    </Key>
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" Nullable="false" MaxLength="40" />
+    <NavigationProperty Name="Employees" Relationship="HRModel.DepartmentEmployee" FromRole="Department" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+    </Key>
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeName" Type="String" Nullable="false" MaxLength="40" />
+    <Property Name="BasicSalary" Type="Decimal" Nullable="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" />
+    <NavigationProperty Name="Department" Relationship="HRModel.DepartmentEmployee" FromRole="Employee" ToRole="Department" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="DepartmentEmployee">
+    <End Type="HRModel.Department" Role="Department" Multiplicity="1" />
+    <End Type="HRModel.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,15 @@
+﻿@model M7_Project_Works.Models.MessageData
+@if (Model.MessageType == "Normal")
+{
+    <div class="alert alert-primary">
+        <h45>@Model.Title</h45>
+        <p>@Model.MessageText</p>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        <h45>@Model.Title</h45>
+        <p>@Model.MessageText</p>
+    </div>
+}

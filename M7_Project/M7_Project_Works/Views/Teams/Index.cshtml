@@ -1,0 +1,49 @@
+﻿@model IEnumerable<M7_Project_Works.ViewModel.TeamVM>
+
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+}
+<h2>Teams List</h2>
+<hr />
+<div class="d-flex justify-content-end mb-1">
+
+    <a href="@Url.Action("Create", "Teams")" class="btn btn-primary rounded-circle"><i class="fa fa-plus"></i></a>
+</div>
+<table class="table table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <th>@Html.DisplayNameFor(x => x.teamId)</th>
+            <th>@Html.DisplayNameFor(x => x.teamName)</th>
+            <th>@Html.DisplayNameFor(x => x.Location)</th>
+            <th>@Html.DisplayNameFor(x => x.Contact)</th>
+            <th>@Html.DisplayNameFor(x => x.Established)</th>
+            <th>Running For (yrs)</th>
+            <th>Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => b.teamId)</td>
+                <td>@Html.DisplayFor(x => b.teamName)</td>
+                <td>@Html.DisplayFor(x => b.Location)</td>
+                <td>@Html.DisplayFor(x => b.Contact)</td>
+                <td>@Html.DisplayFor(x => b.Established)</td>
+                <td>@b.RunningFor</td>
+                <td>
+                    <a class="btn btn-primary btn-sm rounded-circle" href="@Url.Action("Edit", "Teams", new { id=b.teamId })"><i class="fa fa-pencil"></i></a>
+                    <a class="btn btn-danger btn-sm rounded-circle" href="@Url.Action("Delete", "Teams", new { id=b.teamId })"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("Index", "Players")"><i class="fa fa-long-arrow-left"></i> Back to player list</a>
+
+@section styles{
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+}

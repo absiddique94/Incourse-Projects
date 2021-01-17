@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Project_Work.Models.Part>
+<table class="table table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                Part Name
+            </th>
+            <th>
+                Stock
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var p in Model)
+        {
+        <tr>
+            <td>
+                @p.PartName
+            </td>
+            <td>
+                @p.Stock
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

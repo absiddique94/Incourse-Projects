@@ -1,0 +1,27 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport>
+    <div class="user-view">
+      <mat-toolbar color="primary">
+        <a [routerLink]="['/home']" style="text-decoration:none">SCMS</a>
+      </mat-toolbar>
+    </div>
+    <ng-material-multilevel-menu [configuration]='config' [items]='menuItems' (selectedItem)="selectedItem($event)">
+    </ng-material-multilevel-menu>
+    
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Student Course Management System-SCMS (Angular)</span>
+    </mat-toolbar>
+    <div class="top-container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

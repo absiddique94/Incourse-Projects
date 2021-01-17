@@ -1,0 +1,52 @@
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\App.xbf
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\MainPage.xbf
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\LawChamber_Final.xr.xml
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\LawChamber_Final.exe
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\LawChamber_Final.pdb
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\resources.pri
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\AppxManifest.xml
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\Core\AppxManifest.xml
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\Core\LawChamber_Final.exe
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\LawChamber_Final.build.appxrecipe
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\System.Runtime.dll
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\LawChamber_Final.csprojAssemblyReference.cache
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\App.g.i.cs
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\App.g.cs
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\MainPage.g.i.cs
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\MainPage.g.cs
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\App.xaml
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\MainPage.xaml
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\App.xbf
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\MainPage.xbf
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\XamlSaveStateFile.xml
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\LawChamber_Final.csproj.CoreCompileInputs.cache
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\LawChamber_Final.csproj.CopyComplete
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\LawChamber_Final.exe
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\LawChamber_Final.pdb
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\ResourceHandlingTask.state
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\priconfig.xml
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\priconfig.xml.intermediate
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\unfiltered.layout.resfiles
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\filtered.layout.resfiles
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\excluded.layout.resfiles
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\resources.resfiles
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\resources.resfiles.intermediate
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\pri.resfiles
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\pri.resfiles.intermediate
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\qualifiers.txt
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\qualifiers.txt.intermediate
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\ProjectArchitectures.txt
+D:\ABS-1255965\Project\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758804200000000.json
+G:\IDB-BISEW\Visual Studio\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\App.g.i.cs
+G:\IDB-BISEW\Visual Studio\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\App.g.cs
+G:\IDB-BISEW\Visual Studio\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\App.xaml
+G:\IDB-BISEW\Visual Studio\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\MainPage.xaml
+G:\IDB-BISEW\Visual Studio\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\App.xbf
+G:\IDB-BISEW\Visual Studio\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\MainPage.xbf
+G:\IDB-BISEW\Visual Studio\1255965 - Law Chamber\LawChamber_Final\LawChamber_Final\obj\x86\Debug\XamlSaveStateFile.xml

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title></title>
+        <link href="../styles/style.css" rel="stylesheet" />
+		<link href="../styles/form.css" rel="stylesheet" />
+		<script src="../scripts/jquery.min.js"></script>
+        <script>
+            $(document).ready(() => {
+                $("#name").change(() => {
+                  errorShowHide('name');
+                });
+
+                $("#age").change(() => {
+                  errorShowHide('age');
+                });
+
+                $("#bgroup").change(() => {
+                  errorShowHide('bgroup');
+                });
+
+                $("#address").change(() => {
+                  errorShowHide('address');
+                });
+                
+                var isValid;
+                $("#save").click(() => {
+                  isValid = true;
+                  validCheck('name');
+                  validCheck('age');
+                  validCheck('bgroup');
+                  validCheck('address');
+        
+                  return isValid;
+                });
+
+                function errorShowHide(fieldId){
+                  if ($("#"+fieldId).val() == "") {
+                    $("#"+fieldId+"_error").show();
+                  } else {
+                    $("#"+fieldId+"_error").hide();
+                  }
+                }
+                function validCheck(fieldId){
+                  if ($("#"+fieldId).val() == "") {
+                    $("#"+fieldId+"_error").show();
+                    isValid = false;
+                  } 
+                 
+                }
+            });
+        </script>
+  </head>
+  <body>
+        <div class="container">
+            <div class="nav-col">
+
+                <ul class="nav-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="donors.html">Donors</a></li>
+                </ul>
+            </div>
+        <div class="main-col">
+            <div class="app-header">
+                <span class="spacer">&nbsp;</span>
+                <a href="index.html" class="brand">Blood Donation Program</a>
+                <span class="spacer">&nbsp;</span>
+            </div>
+            <div class="content">
+                <div class="content-wrap">                    
+                    <form id="frm" method="POST" action="/edit/@Model.id">
+						<div class="field">
+                                <h3 class="text-center">Update Donor Information</h3>
+						</div>
+                        <div class="field">All fields are required.</div>
+                        <div class="field">
+                            <label for="name" class="label">Name</label>
+                            <input type="text" class="control" name="name" id="name" value="@Model.name" />
+                        </div>
+						<div class="error" id="name_error">Donor name is required.</div>
+                        <div class="field">
+                            <label for="age" class="label">Age</label>
+                            <input type="number" min="18" class="control" name="age" id="age" value="@Model.age" />
+                        </div>
+						<div class="error" id="age_error">Age is required.</div>
+                        <div class="field">
+                            <label for="name" class="label">Blood Group</label>
+                            <select class="control" name="bgroup" id="bgroup" >
+                                <option value="">--Select one---</option>
+								<option value="A+" @(Model.bgroup =='A+' ? 'selected': '')>A+</option>
+								<option value="A-" @(Model.bgroup =='A-' ? 'selected': '')>A-</option>
+								<option value="B+" @(Model.bgroup =='B+' ? 'selected': '')>B+</option>
+								<option value="B-" @(Model.bgroup =='B-' ? 'selected': '')>B-</option>
+								<option value="O+" @(Model.bgroup =='O+' ? 'selected': '')>O+</option>
+								<option value="O-" @(Model.bgroup =='O-' ? 'selected': '')>O-</option>
+								<option value="AB+" @(Model.bgroup =='AB+' ? 'selected': '')>AB+</option>
+								<option value="AB-" @(Model.bgroup =='AB-' ? 'selected': '')>AB-</option>
+                            </select>
+                        </div>
+						<div class="error" id="bgroup_error">Blood Group is required.</div>
+                        <div class="field">
+                            <label for="address" class="label">Location</label>
+                            <input type="text" class="control"  name="address" id="address" value="@Model.address" />
+                        </div>
+                        <div class="error" id="address_error">Location details is required.</div>
+                        <div class="field">
+                            <input type="reset" class="btn btn-default" value="Reset" />
+                            &nbsp;
+                            <button type="submit" class="btn btn-primary" id="save">Update</button>
+                        </div>
+                        <div class="field">
+                            <a href="donors.html" class="btn btn-primary">&#8592; Back to list</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                Developed By Mohammad Abu Bakar Siddique(ID No:1255965)
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

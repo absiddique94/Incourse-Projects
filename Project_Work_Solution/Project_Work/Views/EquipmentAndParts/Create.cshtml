@@ -1,0 +1,197 @@
+﻿@model  Project_Work.Models.Equipment
+@{
+    ViewBag.Title = "Create";
+}
+
+<h3>Add equipment and parts</h3>
+<hr />
+@using (Html.BeginForm("CreatePost", "EquipmentAndParts", FormMethod.Post, new { id = "feq", onesubmit = "javascript:return false;" }))
+{
+    <div class="row">
+        <div class="col-12">
+            <div role="alert" id="alert" class="alert alert-suceess" style="display:none">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="alert-heading" id="msg-heading">Result</h4>
+                <p id="msg"></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h4>Equipment</h4>
+            <div>
+                @Html.LabelFor(x => x.EquipTypeId)
+                @Html.DropDownListFor(x => x.EquipTypeId, new SelectList(ViewBag.EquipmentTypes, "EquipmentTypeId", "TypeName"), "Select type", new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.EquipTypeId, "", new { @class = "text-danger" })
+
+            </div>
+            <div>
+                @Html.LabelFor(x => x.Model)
+                @Html.TextBoxFor(x => x.Model, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Model, "", new { @class = "text-danger" })
+            </div>
+            <div id="dt-picker">
+                @Html.LabelFor(x => x.PurchaseDate)
+                @Html.TextBoxFor(x => x.PurchaseDate, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.PurchaseDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-6">
+            <h4>Parts</h4>
+            <table class="table table-bordered table-sm">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Sr #</th>
+                        <th>Part Name</th>
+                        <th>Stock</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tbparts"></tbody>
+            </table>
+            <div class="form-inline">
+                <label class="sr-only" for="PartName">Part Name</label>
+                <input type="Text" class="form-control mb-2 mr-sm-2" name="PartName" id="PartName" placeholder="Part Name">
+                <label class="sr-only" for="Stock">Stock</label>
+                <input type="Text" class="form-control mb-2 mr-sm-2" name="Stock" id="Stock" placeholder="Stock">
+                <button type="button" id="addPart" class="btn btn-primary  mb-2">Add</button>
+            </div>
+
+        </div>
+        <div class="col-12 mt-2">
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" id="save">Save All</button>
+            </div>
+        </div>
+    </div>
+}
+@section styles{
+    <link href="~/Content/bootstrap-datepicker.standalone.css" rel="stylesheet" />
+}
+@section scripts
+{
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script>
+        var equipment = {
+            Model: "",
+            PurchaseDate: "",
+            EquipTypeId: 0,
+            Parts: []
+        }
+        $(document).ready(function () {
+            $('#dt-picker input').datepicker({
+                format: 'yyyy-mm-dd'
+            });
+            if (equipment.Parts.length == 0) {
+                $("#tbparts").append("<tr><td colspan='4'>No Parts added.</td></tr>");
+            }
+            else {
+                for (var i = 0; i < equipment.Parts.length; i++) {
+                    $("#tbparts").append(`<tr>
+                                            <td>${i + 1}</td>
+                                            <td >${equipment.Parts[i].PartName}</td >
+                                            <td >${equipment.Parts[i].Stock}</td>
+                                            <td><button data-act='del'  data-index='${i}' type="button" class='btn btn-primary btn-sm del'>&times;</button>
+                                    </tr>`);
+                }
+                $("button[data-act='del']").addClass('btn btn-info btn-sm del');
+            }
+            $("#addPart").click(function () {
+                equipment.Parts.push({ PartName:$("#PartName").val(), Stock: $("#Stock").val()})
+                $("#tbparts").append(`<tr>
+                                            <td>${equipment.Parts.length}</td>
+                                            <td >${$("#PartName").val()}</td>
+                                            <td >${$("#Stock").val()}</td>
+                                            <td><button data-act='del' data-index='${equipment.Parts.length-1}' type='button" class='btn btn-primary btn-sm del'>&times;</button>
+                                    </tr>`);
+                $("button[data-act='del']").addClass('btn btn-info btn-sm del')
+            })
+            $("#save").click(function (evt) {
+                //alert("Save");
+                evt.preventDefault();
+                evt.stopPropagation();
+                if ($("#feq").valid()) {
+                    console.log('Ok');
+                   equipment.EquipTypeId = $("#EquipTypeId").val();
+                    equipment.Model = $("#Model").val()
+                    equipment.PurchaseDate = $("#PurchaseDate").val();
+                    console.log(equipment);
+                    $.ajax({
+                        type: "POST",
+                        url: "@Url.Action("CreatePost", "EquipmentAndParts")",
+
+                        data: equipment,
+                        dataType: "json"
+                    }).done(function (r) {
+                        console.log(r);
+                        if (r.success == true) {
+                            $("#alert").removeClass("alert-warning").addClass("alert-success").show();
+                            $("#msg-heading").html("Success");
+                            $("#msg").html(r.message);
+                            $("#feq").trigger("reset");
+                            equipment = {
+                                Model: "",
+                                PusrchaseDate: "",
+                                EquipTypeId: 0,
+                                Parts: []
+                            }
+                            $("#tbparts").empty();
+                            $("#tbparts").append("<tr><td colspan='4'>No Parts added.</td></tr>");
+
+                        }
+                        else {
+                            $("#alert").removeClass("alert-success").addClass("alert-warning").show();
+                            $("#msg-heading").html("Error");
+                            $("#msg").html(r.message);
+                        }
+
+                    }).fail(function (err) {
+                        console.log(err);
+                    });
+                }
+                else {
+                    console.log('Not Ok');
+                    if (equipment.Parts.length == 0) {
+
+                    }
+                }
+
+
+            })
+            $('body').on("click", "button.del", function (evt) {
+
+                var b = $(this);
+                var tr = b.closest('tr');
+                var i = b.data("index");
+                console.log(i);
+                tr.remove();
+                equipment.Parts.splice(i, 1);
+                console.log(equipment.Parts);
+                $("#tbparts").empty();
+                if (equipment.Parts.length == 0) {
+                    $("#tbparts").append("<tr><td colspan='4'>No Parts added.</td></tr>");
+                }
+                else {
+                    for (var i = 0; i < equipment.Parts.length; i++) {
+                        $("#tbparts").append(`<tr>
+                                            <td>${i + 1}</td>
+                                            <td >${equipment.Parts[i].PartName}</td >
+                                            <td >${equipment.Parts[i].Stock}</td>
+                                            <td><button data-act='del'  data-index='${i}' type="button" class='btn btn-primary btn-sm del'>&times;</button>
+                                    </tr>`);
+                    }
+                    $("button[data-act='del']").addClass('btn btn-info btn-sm del');
+                }
+                evt.preventDefault();
+
+            })
+
+        })
+    </script>
+}

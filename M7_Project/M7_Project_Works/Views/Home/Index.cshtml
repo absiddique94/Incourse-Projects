@@ -1,0 +1,15 @@
+﻿@using M7_Project_Works.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="col">
+    @Html.Partial("_Banner")
+    
+</div>
+<br />
+<div class="col">
+    
+    @Html.Action("Message", "Home")
+</div>
+

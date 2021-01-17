@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HR_Project.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Managenet::<%: Page.Title %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/Content/materialize.min.css" media="screen,projection" />
+    <style>
+        body{
+            font-family: 'Roboto','Segoe UI', sans-serif;
+        }
+        .zero {
+            padding: 0;
+            margin: 0;
+        }
+
+        .topcontainer {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .bodycontainer {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .side-nav {
+            width: 260px;
+        }
+
+            .side-nav li > a {
+                padding: 0 16px;
+                border-bottom: solid 1px #e0e0e0;
+            }
+
+            .side-nav .divider {
+                margin: 0;
+                height: 8px;
+                border-bottom: 1px solid #e0e0e0;
+                background-color: transparent;
+            }
+
+        .top-level-header {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .sidenav-header {
+            /*background: url("../images/background-design-trends-368x246.jpg") no-repeat center center;*/
+           
+            background-size: cover;
+            margin-bottom: 0;
+            padding: 15px 0 15px 5px;
+        }
+
+            .sidenav-header .row {
+                margin-bottom: 0;
+            }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="zero">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <ul class="sidenav side-nav " id="slide-out">
+            <li class="sidenav-header" style="background-color:#ee6e73;">
+                <div class="row">
+                        <h6 class="brand-logo">Employee Management</h6>
+                </div>
+                
+            </li>
+            <li class="sidenav-header">
+                
+                <div class="row">
+                    
+                    <div style="display: flex; align-items: flex-end">
+                        <asp:LoginView ID="LoginView2" runat="server">
+                            <AnonymousTemplate>
+                                <span><a href="/Register.aspx" class="btn-flat"><i class="material-icons left">how_to_reg</i>Register</a></span>
+                                <span><a href="/Login.aspx" class="btn-flat"><i class="material-icons left">perm_identity</i>Login</a></span>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <span style="flex:auto;" class="red-text">
+                                    <asp:LoginName ID="LoginName2" runat="server" />
+                                </span>
+                                <span style="padding-right:7px;">
+                                    <asp:LinkButton CssClass="btn btn-flat red" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></span>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </li>
+            <li><a href="/Default.aspx"><i class="material-icons">home</i>Home</a></li>
+            <li><a href="/Secured/Departments.aspx"><i class="material-icons">crop_free</i>Departments</a></li>
+            
+            <li><a href="/Secured/EmplyeeCRUD.aspx"><i class="material-icons">person</i>Employees</a></li>
+            <li><a href="/Secured/MasterDetailData.aspx"><i class="material-icons">connect_without_contact</i>Master/Detail</a></li>
+            <li><a href="/Secured/CREmployee1.aspx"><i class="material-icons">preview</i>Report</a></li>
+        </ul>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <asp:LoginView ID="LoginView1" runat="server">
+                <AnonymousTemplate>
+                    <li><a href="/Register.aspx"><i class="material-icons left">input</i>Register</a></li>
+                    <li><a href="/Login.aspx"><i class="material-icons left">input</i>Login</a></li>
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+                    <li><a href="#!">
+                        <asp:LoginName ID="LoginName2" runat="server" />
+                    </a></li>
+                    <li><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Logout</asp:LinkButton></li>
+                </LoggedInTemplate>
+            </asp:LoginView>
+
+        </ul>
+        <div class="navbar-fixed">
+            <nav>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#" data-target="slide-out" class="sidenav-trigger show-on-medium-and-up small"><i class="material-icons">menu</i></a></li>
+                    <li><a href="/Default.aspx" class="brand-logo">HR-Employee</a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/Default.aspx">Home</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">more_vert</i></a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        <div class="bodycontainer">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="bodycontainer page-footer">
+            <div class="row">
+                <div class="col s12" style="padding-bottom:10px">
+                   &copy; <%:DateTime.Now.Year %> - HR-Employee Management
+                </div>
+            </div>
+        </footer>
+        <script src="/Scripts/jquery-3.5.1.js"></script>
+        <script src="/Scripts/materialize.js"></script>
+        <script>
+            $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown({
+                coverTrigger: false,
+                constrainWidth: false
+
+            });
+        </script>
+        <asp:ContentPlaceHolder ID="foot" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

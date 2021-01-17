@@ -1,0 +1,213 @@
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\HR_Project.dll.config
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\HR_Project.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\HR_Project.pdb
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\csc.exe
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\csc.exe.config
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\csc.rsp
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\csi.exe
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\csi.exe.config
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\csi.rsp
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.AppContext.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Console.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Globalization.Calendars.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.IO.Compression.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.IO.FileSystem.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Net.Http.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Net.Sockets.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.ValueTuple.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Xml.XPath.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\vbc.exe
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\vbc.exe.config
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\vbc.rsp
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\VBCSCompiler.exe
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\AspNet.ScriptManager.jQuery.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportSource.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.Shared.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.Web.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\EntityFramework.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\EntityFramework.SqlServer.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.Owin.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.Owin.Security.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Owin.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.Helpers.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.Mvc.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.Razor.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.WebPages.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.WebPages.Razor.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\stdole.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\EntityFramework.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\EntityFramework.SqlServer.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.Owin.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.Owin.Security.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.Helpers.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.Mvc.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.Razor.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.WebPages.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\bin\System.Web.WebPages.Razor.xml
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\obj\Debug\HR_Project.csproj.CoreCompileInputs.cache
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\obj\Debug\HR_Project.csproj.CopyComplete
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\obj\Debug\HR_Project.dll
+E:\Projects\R43\ASPNET Projects\HR_Project_Solution\HR_Project\obj\Debug\HR_Project.pdb
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\HR_Project.dll.config
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\HR_Project.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\HR_Project.pdb
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\csc.exe
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\csc.exe.config
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\csc.rsp
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\csi.exe
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\csi.exe.config
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\csi.rsp
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.Managed.Core.targets
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.AppContext.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Collections.Immutable.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Console.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Globalization.Calendars.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.IO.Compression.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.IO.FileSystem.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Net.Http.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Net.Sockets.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Reflection.Metadata.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.ValueTuple.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Xml.XmlDocument.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Xml.XPath.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\vbc.exe
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\vbc.exe.config
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\vbc.rsp
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\VBCSCompiler.exe
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\roslyn\VBCSCompiler.exe.config
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\AspNet.ScriptManager.jQuery.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.CrystalReports.Engine.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportSource.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.Shared.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.Web.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\EntityFramework.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\EntityFramework.SqlServer.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.AspNet.Identity.Core.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.Owin.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.Owin.Security.Cookies.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.Owin.Security.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.Web.Infrastructure.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Owin.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.Helpers.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.Mvc.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.Razor.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.WebPages.Deployment.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.WebPages.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.WebPages.Razor.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\stdole.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\EntityFramework.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\EntityFramework.SqlServer.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.AspNet.Identity.Core.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.Owin.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.Owin.Security.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\Microsoft.Owin.Security.Cookies.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.Helpers.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.Mvc.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.Razor.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.WebPages.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.WebPages.Deployment.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\bin\System.Web.WebPages.Razor.xml
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\obj\Debug\HR_Project.csprojAssemblyReference.cache
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\obj\Debug\HR_Project.csproj.CoreCompileInputs.cache
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\obj\Debug\HR_Project.csproj.CopyComplete
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\obj\Debug\HR_Project.dll
+G:\IDB-BISEW\Module 07 (MVC)\Project_HR_Solution\HR_Project\obj\Debug\HR_Project.pdb

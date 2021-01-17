@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Project_Work.Models.Part>
+@using PagedList
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Part List</h2>
+
+<div class="d-flex justify-content-end mb-1">
+    @Html.ActionLink("Create New", "Create", "Parts", new { }, new { @class = "btn btn-primary btn-sm" })
+</div>
+<table class="table table-bordered table-striped table-primary">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PartName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stock)
+            </th>
+            <th>
+                Equipment Model
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PartName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stock)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Equipment.Model)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.PartId }, new { @class="btn btn-primary btn-sm"}) 
+                    
+                    @Html.ActionLink("Delete", "Delete", new { id = item.PartId }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        </tbody>
+    }
+
+</table>
+<div class="d-flex justify-content-end">
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { pg = page }))
+</div>
+@section styles{
+    <link href="~/Content/PagedList.css" rel="stylesheet" />
+}

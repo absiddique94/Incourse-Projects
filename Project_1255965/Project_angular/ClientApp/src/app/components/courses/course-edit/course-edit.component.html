@@ -1,0 +1,35 @@
+<mat-card class="mat-elevation-z8">
+  <mat-card-header>
+    <mat-card-title>Edit Course</mat-card-title>
+    <mat-card-subtitle>Fill up the form</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="form-container">
+    <form [formGroup]="courseForm" class="form-group" (ngSubmit)="onSubmit()">
+      <mat-form-field class="f-w">
+        <mat-label>Course Name</mat-label>
+        <input matInput formControlName="CourseName">
+        <mat-error *ngIf="f.CourseName.touched && f.CourseName.hasError('required')">Course name required.</mat-error>
+      </mat-form-field>
+      <mat-form-field class="f-w">
+        <mat-label>Duration (month)</mat-label>
+        <input matInput formControlName="Duration">
+        <mat-error *ngIf="f.Duration.touched && f.Duration.hasError('required')">Duration required.</mat-error>
+      </mat-form-field>
+      <mat-form-field class="f-w">
+        <mat-label>Student</mat-label>
+
+        <mat-select formControlName="StudentId">
+
+          <mat-option *ngFor="let op of students" [value]="op.StudentId">{{op.StudentName}}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="f.StudentId.touched && f.StudentId.hasError('required')">Student required.</mat-error>
+      </mat-form-field>
+      <div class="f-w">
+        <button type="submit" mat-raised-button color="primary">Save Data</button>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-footer>
+    <a mat-flat-button>Back to list</a>
+  </mat-card-footer>
+</mat-card>

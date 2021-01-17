@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        body{
+            padding-top:70px;
+        }
+    </style>
+  @RenderSection("styles", false)
+</head>
+<body>
+    <div class="navbar navbar-light bg-light navbar-expand-md fixed-top border-bottom">
+        <div class="container">
+            @Html.ActionLink("Equipment-Parts Repository", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="nbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"> @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="@Url.Action("Index", "EquipmentAndParts")">Equipments</a>
+                            <a class="dropdown-item" href="#">Equipment Types</a>
+                            
+                            <a class="dropdown-item" href="@Url.Action("Index", "Parts")">Equipment Parts</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item"> @Html.ActionLink("Logout", "Logout", "Accounts", new { area = "" }, new { @class = "nav-link" })</li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"> @Html.ActionLink("Register", "Register", "Accounts", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li class="nav-item"> @Html.ActionLink("Login", "Login", "Accounts", new { area = "" }, new { @class = "nav-link" })</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+
+
+    </div>
+    <footer class="container">
+        <hr />
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+    <script src="~/Scripts/umd/popper.js"></script>
+    <script src="~/Scripts/jquery-3.5.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>

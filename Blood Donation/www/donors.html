@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Donors</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <script src="scripts/jquery.js"></script>
+    <script>
+        $(document).ready(() => {
+            $.ajax({
+                type: 'GET',
+                url: '/list',
+                dataType: 'json'
+            }).done((r) => {
+                $.each(r, (i, v) => {
+                    $("#placeholder").append(`<tr>
+                            <td><img class='profile-pic' src='/Images/${v.picture}' width='50' /></td>
+                            <td>${v.name}</td>
+                            <td>${v.age}</td>
+                            <td>${v.bgroup}</td>
+                            <td>${v.address}</td>
+                            <td>
+                              <a href="/edit/${v.id}" class="btn btn-primary">Edit</a>
+                              <a href="/del/${v.id}" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>`)
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="container " >
+       
+        <div class="nav-col">
+            <div class="nav-header">
+                Menu
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donors.html">Donors</a></li>
+            </ul>
+        </div>
+        <div class="main-col">
+            <div class="app-header">
+                <span class="spacer">&nbsp;</span>
+                <a href="index.html" class="brand">Blood Donation Program</a>
+                <span class="spacer">&nbsp;</span>
+            </div>
+            <div class="content">
+                
+                <div class="content-wrap">
+                    <h1>Donars List</h1>
+                    <div style="display:flex; justify-content:flex-end">
+                        <a href="form.html" class="btn btn-primary"> Add New</a>
+                    </div>
+                    <table class="table bordered">
+                        <thead>
+                            <tr>
+                                <th>Picture</th>
+								<th>Name</th>
+                                <th>Age</th>
+                                <th>Blood Group</th>
+								<th>Location</th>
+								<th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="placeholder"></tbody>
+                    </table>
+                </div>
+            </div>
+       
+            <div class="footer">
+                Prepared and Developed By @ Mohammad Abu Bakar Siddique(Trainee ID:1255965)
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

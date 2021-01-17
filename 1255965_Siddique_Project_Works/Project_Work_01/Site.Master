@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Project_Work_01.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Project : <%: Page.Title %></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/umd/popper.js"></script>
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <link href="Scripts/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-light bg-warning navbar-expand-md fixed-top border-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="/">Project Work</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="Default.aspx">Home</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <asp:LoginView ID="LoginView1" runat="server">
+                        <AnonymousTemplate>
+                            <li class="nav-item"><a class="nav-link" href="/Register.aspx">Register</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Login.aspx">Sign in</a></li>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="navbar-collapse collapse" id="navMain">
+                                <ul class="navbar-nav nav ml-auto">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Works</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="Work_01.aspx">Work 01</a>
+                                            <a class="dropdown-item" href="Work_02.aspx">Ex 02</a>
+                                            <a class="dropdown-item" href="Work_03.aspx">Ex 03</a>
+                                            <a class="dropdown-item" href="Work_04.aspx">Ex 04</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <li class="nav-item">
+                                    <span class="navbar-text">
+                                        <asp:LoginName ID="loggedUser" runat="server" />
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <asp:LinkButton CssClass="nav-link" ID="lbLogout" runat="server" OnClick="lbLogout_Click">Sign Out</asp:LinkButton>
+                                </li>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid" style="min-height: calc(100vh - 150px);">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="bg-warning fixed-bottom">
+            &copy; ASP.NET Application Developed by Mohammad Abu Bakar Siddique
+            <span><asp:Literal ID="Literal1" runat="server"></asp:Literal></span>
+            <span class="float-right">Total vistited <%: Application["HitCounter"] %> times.</span>
+
+        </footer>
+    </form>
+    <script src="Scripts/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="foot" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

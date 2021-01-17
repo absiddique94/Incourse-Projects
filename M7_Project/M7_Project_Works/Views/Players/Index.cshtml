@@ -1,0 +1,88 @@
+﻿@model IEnumerable<M7_Project_Works.Models.Player>
+@using PagedList;
+@using PagedList.Mvc;
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+}
+
+<h2>Players List</h2>
+<hr />
+<div class="d-flex justify-content-end mb-1">
+    @using (Html.BeginForm())
+    {
+        <div class="input-group mr-1">
+            <input type="text" name="search" class="form-control" placeholder="type name.." />
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+
+
+    }
+    <a class="btn btn-outline-primary btn-sm" href="@Url.Action("Create", "Players")"><i class="fa fa-plus"></i></a>
+</div>
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                <a href="@Url.Action("Index","Players",new { sort=ViewBag.Sort, page=ViewBag.CurrentPage})" )"> @Html.DisplayNameFor(x => x.PlayerId)</a>
+            </th>
+            <th>
+                <a href="@Url.Action("Index","Players",new { page=ViewBag.CurrentPage,sort=( ViewBag.Sort == "PlayerName" || ViewBag.Sort == "PlayerName DESC" ? ViewBag.Sort : "PlayerName")})" )">@Html.DisplayNameFor(x => x.PlayerName)</a>
+            </th>
+            <th>@Html.DisplayNameFor(x => x.BasicSalary)</th>
+            <th>
+                @Html.DisplayNameFor(x => x.team.teamName)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+        <tr>
+            <td>@p.PlayerId</td>
+            <td>@Html.DisplayFor(x => p.PlayerName)</td>
+            <td>@Html.DisplayFor(x => p.BasicSalary)</td>
+            <td>@Html.DisplayFor(x => p.team.teamName)</td>
+            <td>
+                <a class="btn btn-primary btn-sm rounded-circle" href="@Url.Action("Edit", "Players", new { id=p.PlayerId })"><i class="fa fa-pencil"></i></a>
+                <a class="btn btn-danger btn-sm rounded-circle" href="@Url.Action("Delete", "Players", new { id=p.PlayerId })"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<div class="d-flex justify-content-end">
+    <ul class="pagination pagination-sm">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            if (i == ViewBag.CurrentPage)
+            {
+                <li class="page-item active">
+                    @Html.ActionLink(i.ToString(), "Index", "Players", new { page = i, sort = ViewBag.Sort }, new { @class = "page-link" })
+                </li>
+            }
+            else
+            {
+                <li class="page-item">
+                    @Html.ActionLink(i.ToString(), "Index", "Players", new { page = i, sort = ViewBag.Sort }, new { @class = "page-link" })
+                </li>
+            }
+
+        }
+    </ul>
+</div>
+
+@*<div class="d-flex justify-content-end">
+        @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))
+    </div>*@
+<a href="@Url.Action("Index", "Teams")"><i class="fa fa-long-arrow-left"></i> Back to team list</a>
+@section styles{
+    <link href="~/Content/PagedList.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+}
+

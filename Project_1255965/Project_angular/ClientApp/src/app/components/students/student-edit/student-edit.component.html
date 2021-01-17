@@ -1,0 +1,68 @@
+<mat-card class="mat-elevation-z8">
+  <mat-card-header>
+    <mat-card-title>Edit Student</mat-card-title>
+    <mat-card-subtitle>Fill up the form</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="form-container">
+    <form [formGroup]="studentForm" class="form-group" (ngSubmit)="onSubmit()">
+      <mat-form-field class="f-w">
+        <mat-label>Student Name</mat-label>
+        <input matInput formControlName="StudentName">
+        <mat-error *ngIf="studentForm.get('StudentName').touched && studentForm.get('StudentName').hasError('required')">Student name required.</mat-error>
+      </mat-form-field>
+      <mat-form-field class="f-w">
+        <mat-label>Description</mat-label>
+        <input matInput formControlName="Description">
+        <mat-error *ngIf="studentForm.get('Description').touched && studentForm.get('Description').hasError('required')">Description required.</mat-error>
+      </mat-form-field>
+      <div class="f-w">
+        <mat-checkbox formControlName="FemaleAllowed">Regular ?</mat-checkbox>
+
+      </div>
+
+      <!-- For Courses-->
+
+      <div formArrayName="Courses">
+        <div class="f-w-2" *ngFor="let x of CourseArray.controls;let i=index;" [formGroupName]="i">
+          <mat-form-field class="f-30">
+            <mat-label>Course Name</mat-label>
+            <input matInput formControlName="CourseName">
+            <mat-error *ngIf="CourseArray.controls[i].get('CourseName').touched && CourseArray.controls[i].get('CourseName').hasError('required')">Course Name required.</mat-error>
+          </mat-form-field>
+          <mat-form-field class="f-30">
+            <mat-label>Duration (month)</mat-label>
+            <input matInput formControlName="Duration">
+            <mat-error *ngIf="CourseArray.controls[i].get('Duration').touched && CourseArray.controls[i].get('Duration').hasError('required')">Duration required.</mat-error>
+          </mat-form-field>
+          <div class="f-30">
+            <button type="button" mat-icon-button (click)="removeCourseItem(i)"><mat-icon>delete</mat-icon></button>
+          </div>
+        </div>
+      </div>
+      <div formArrayName="NewCourses">
+        <div class="f-w-2" *ngFor="let x of NewCourseArray.controls;let i=index;" [formGroupName]="i">
+          <mat-form-field class="f-30">
+            <mat-label>Course Name</mat-label>
+            <input matInput formControlName="CourseName">
+            <mat-error *ngIf="NewCourseArray.controls[i].get('CourseName').touched && NewCourseArray.controls[i].get('CourseName').hasError('required')">Course Name required.</mat-error>
+          </mat-form-field>
+          <mat-form-field class="f-30">
+            <mat-label>Duration (month)</mat-label>
+            <input matInput formControlName="Duration">
+            <mat-error *ngIf="NewCourseArray.controls[i].get('Duration').touched && NewCourseArray.controls[i].get('Duration').hasError('required')">Duration required.</mat-error>
+          </mat-form-field>
+          <div class="f-30">
+            <button type="button" mat-icon-button (click)="addCourseToStudent()" [disabled]="NewCourseArray.invalid"><mat-icon>add</mat-icon></button>
+          </div>
+        </div>
+      </div>
+      <div class="f-w">
+        <button type="submit" mat-raised-button color="primary">Save Data</button>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-footer>
+    <a mat-flat-button [routerLink]="['/students']"><mat-icon>keyboard_arrow_left</mat-icon> Back to list</a>
+  </mat-card-footer>
+</mat-card>
+

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Project_Work.Models.Equipment>
+@using PagedList
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "IndexCRUD";
+}
+
+<h2>Equipment list</h2>
+
+<div class="d-flex justify-content-end mb-1">
+    @Html.ActionLink("+", "Create", new { }, new { @class="btn btn-primary rounded-circle"})
+</div>
+<table class="table table-bordered table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchaseDate)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.EquipTypeId)
+            </th>
+            <th>Parts</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PurchaseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EquipmentType.TypeName)
+                </td>
+                <td>
+                    <a class="btn btn-light btn-sm" href="@Url.Action("PartList", "Equipments",new {id=item.EquipTypeId })">
+                        Parts
+                    </a>
+                   
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditEquipment", new { id = item.EquipmentId }, new { @class="btn btn-primary btn-sm"})
+                    @Html.ActionLink("Details", "EquipmentDetails", new { id = item.EquipmentId }, new { @class = "btn btn-secondary btn-sm" }) 
+                    @Html.ActionLink("Delete", "Delete", new { id = item.EquipmentId }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+<div class="d-flex justify-content-end">
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { pg=page }))
+</div>
+@section styles{
+    <link href="~/Content/PagedList.css" rel="stylesheet" />
+}

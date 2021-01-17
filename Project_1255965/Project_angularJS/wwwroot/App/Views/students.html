@@ -1,0 +1,71 @@
+﻿<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4>Student & Course</h4>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Student List</h5>
+                <div class="card-text">
+
+                    <table class="table table-bordered table-sm">
+                        <thead class="thead-light">
+                            <tr>
+                                <th></th>
+                                <th class="py-3 pl-2">Student Name</th>
+                                <th class="py-3 pl-2">Descrption</th>
+                                <th class="py-3 pl-2">General ?</th>
+                                <th class="py-3 pl-2 text-right" style="width:90px;"> <a class="btn btn-outline-success btn-sm" ng-href="#!/createStudent"><i class="fa fa-plus"></i></a></th>
+                            </tr>
+                        </thead>
+                        <tbody ng-repeat="data in model.students">
+                            <tr>
+                                <td class="text-center">
+                                    <button type="button" class="btn" ng-if="!data.isExpanded" ng-click="data.isExpanded = !data.isExpanded"><span class="fa fa-plus"></span></button>
+                                    <button type="button" class="btn" ng-if="data.isExpanded" ng-click="data.isExpanded = !data.isExpanded"><span class="fa fa-minus"></span></button>
+                                </td>
+                                <td>{{data.student.StudentName}}</td>
+                                <td>{{data.student.Description}}</td>
+                                <td>{{data.student.FemaleAllowed ? 'Yes':'No'}}</td>
+                                <td class="text-right">
+                                    <a class="btn btn-outline-primary btn-sm" ng-href="#!/editStudent/{{data.student.StudentId}}"><i class="fa fa-pencil"></i></a>
+                                    <a class="btn btn-outline-danger btn-sm" ng-href="#!/deleteStudent/{{data.student.StudentId}}"><i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr ng-if="data.isExpanded">
+                                <td></td>
+                                <td colspan="4" class="pt-3">
+
+
+                                    <h5 class="card-subtitle mb-1">Course List</h5>
+                                    <table class="table table-bordered">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>Course Name</th>
+                                                <th>Duration (month)</th>
+                                                <th class="text-right" style="width:90px;"><a class="btn btn-outline-success btn-sm" ng-href="#!/createCourse"><i class="fa fa-plus"></i></a></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="item in data.student.Courses">
+                                                <td>{{item.CourseName}}</td>
+                                                <td>{{item.Duration}}</td>
+
+                                                <td class="text-right">
+                                                    <a class="btn btn-outline-primary btn-sm" ng-href="#!/editCourse/{{item.StudentId}}"><i class="fa fa-pencil"></i></a>
+                                                    <a class="btn btn-outline-danger btn-sm" ng-href="#!/deleteCourse/{{item.StudentId}}"><i class="fa fa-trash"></i></a>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
